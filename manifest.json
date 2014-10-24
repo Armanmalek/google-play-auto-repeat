@@ -1,0 +1,12 @@
+{
+  "name": "Google Play Music Auto-Repeat",
+  "description": "Play Music does this thing where if you choose an instant mix it turns off auto-repeat. This extension fixes that.",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches" : ["*://play.google.com/*"],
+      "js"      : ["jquery.min.js", "force-repeat.js"]
+    }
+  ]
+}
